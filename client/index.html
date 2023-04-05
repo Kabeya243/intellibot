@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>intellibot | By kabeya ilunga</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="presentation rounded-xl">
+        <p class="close bg-red-700 text-3xl text-white cursor-pointer px-4">X</p>
+        <div class="img">
+          <img src="./assets/bot1.png" class="mx-auto" alt="">
+        </div>
+        <div class="">
+          <p class="text-center text-2xl font-bold pt-6">
+            hi,I am kabeya</p>
+          <p class="px-4 font-semibold mt-4">
+            "Découvrez Intellibot, votre nouvel assistant conversationnel intelligent.
+             Posez-lui toutes vos questions sur vos devoirs,
+              les actualités, la culture generale et plus 
+              encore ! Contactez-moi si vous avez des problèmes ou des suggestions. Disponible sur <a class="text-white font-bold rounded-lg py-1 px-2 bg-blue-800" href="https://kabeya243.github.io/">me contacter</a>. Merci de l'avoir !"
+          </p>
+        </div>
+          <div class="text-5xl flex justify-center gap-16 text-gray-500 mt-4">
+            <a class=" cursor-pointer hover:text-blue-600" href="https://www.linkedin.com/in/kabeya-ilunga/"><i class="bx bxl-linkedin"></i></a>
+            <a class=" cursor-pointer hover:text-purple-600" href="https://www.instagram.com/ilunga.kabeya/"><i class="bx bxl-instagram"></i></a>
+            <a class=" cursor-pointer hover:text-green-600" href="https://wa.me/+243975072724"><i class="bx bxl-whatsapp"></i></a>
+        </div>
+      </div>
+      <!-- navigation bar -->
+      <nav class="px-6 py-4">
+        <div class="logo">
+          <h1 class="text-3xl font-bold font-mono">
+            intellibot
+          </h1>
+        </div>
+        <div class=" flex">
+          <a class="about text-2xl mx-14 -mt-2 bg-blue-900 text-white py-2 px-4 rounded-xl"  href="https://Kabeya243.github.io">
+            about</a>
+          <i class="bx bx-sun mr-4"></i>
+        </div>
+      </nav>
+      <!-- navigation bar -->
+      <div id="chat_container"></div>
+
+      <form>
+        <!-- <input type="text" name="prompt" placeholder="ask hello ai"> -->
+        <textarea name="prompt" rows="1" cols="1" placeholder="pose une question"></textarea>
+        <button type="submit">
+          <i class="bx bxs-send bg-blue-900"></i>
+        </button>
+      </form>
+    </div>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

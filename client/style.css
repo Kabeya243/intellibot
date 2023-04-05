@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Alegreya Sans", sans-serif;
+}
+*{
+  transition: background .3s;
+}
+body {
+  background: #fff;
+}
+/* dark mode style  */
+body.dark{
+  background: #263238;
+}
+body.dark nav{
+  color: #f1f1f1;
+}
+body.dark nav .logo{
+  color: #f1f1f1;
+}
+body.dark form{
+  box-shadow: none;
+  border: 2px solid rgb(209, 208, 208);
+  color: #f1f1f1;
+}
+body.dark .message{
+  color: #7f8081;
+}
+
+.presentation{
+  position: absolute;
+  top: 150px;
+  height: max-content;
+  padding-bottom: 20px;
+  width: 60%;
+  box-shadow: 20px 20px 60px #bebebe,
+              -20px -20px 60px #fefefe;
+  z-index: 200;       
+  padding: 20px 0;     
+}
+.presentation .img{
+  border-bottom: 2px solid black;
+}
+.presentation img{
+  width: 100px;
+  
+}
+.presentation .close{
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/* dark mode style  */
+#app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+nav{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+nav .logo{
+  text-transform: uppercase;
+}
+nav .bx{
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+
+#chat_container {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  padding-bottom: 20px;
+  scroll-behavior: smooth;
+}
+
+/* hides scrollbar */
+#chat_container::-webkit-scrollbar {
+  display: none;
+}
+
+.wrapper {
+  width: 100%;
+  padding: 15px;
+}
+
+.ai {
+  background: #dedddd;
+  color: #212121;
+}
+
+.chat {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.profile {
+  width: 36px;
+  height: 36px;
+  border-radius: 5px;
+
+  /* background: linear-gradient(45deg,#aa076b,#61045f); */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ai .profile {
+  /* background: linear-gradient(45deg,#1a2980,#26d0ce); */
+}
+
+.profile img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.message {
+  flex: 1;
+
+  color: #141414;
+  font-size: 20px;
+  font-weight: 500;
+  max-width: 100%;
+  overflow-x: scroll;
+
+  /*
+   * white space refers to any spaces, tabs, or newline characters that are used to format the CSS code
+   * specifies how white space within an element should be handled. It is similar to the "pre" value, which tells the browser to treat all white space as significant and to preserve it exactly as it appears in the source code.
+   * The pre-wrap value allows the browser to wrap long lines of text onto multiple lines if necessary.
+   * The default value for the white-space property in CSS is "normal". This tells the browser to collapse multiple white space characters into a single space, and to wrap text onto multiple lines as needed to fit within its container.
+  */
+  white-space: pre-wrap; 
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* hides scrollbar */
+.message::-webkit-scrollbar {
+  display: none;
+}
+
+form {
+  width: 90%;
+  max-width: 1280px;
+  margin: 10px auto;
+  padding: 10px;
+  box-shadow: 10px 10px 20px #f2f2f2,
+              -10px -10px 20px #eaeaea;
+  outline: none;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+  color: #fff;
+  font-size: 18px;
+  padding-left: 10px;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+form button {
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  background: transparent;
+}
+
+form .bx {
+  font-size: 2rem;
+  margin-right: 10px;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(45deg,#1488cc,#2b32b2);
+  border-radius: 50%;
+  padding: 5px;
+}
+.about{
+  background: linear-gradient(45deg,#1488cc,#2b32b2);
+}
